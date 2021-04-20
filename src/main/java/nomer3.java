@@ -27,5 +27,27 @@ public class nomer3 {
       }
       System.out.println();
     }
+     System.out.print("Masukkan jumlah baris matriks B: ");
+    m = scan.nextInt();
+    System.out.print("Masukkan jumlah kolom matriks B: ");
+    n = scan.nextInt();
+    System.out.println("Masukkan elemen matriks B: ");
+    for(i = 0; i < m; i++){
+      for(j = 0; j< n; j++){
+        matriks[i][j] = scan.nextInt();
+      }
+    }
+    for(i = 0; i < m; i++){
+      for(j = 0; j< n; j++){
+        transpose[j][i] = matriks[i][j];
+      }
+    }
+    System.out.println("Hasil transpose matriks: ");
+    for(i = 0; i < n; i++){
+      for(j = 0; j< m; j++){
+        System.out.print(transpose[i][j] + "\t");
+      }
+      System.out.println();
+    }
   }
 }
